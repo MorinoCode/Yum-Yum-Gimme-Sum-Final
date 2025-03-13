@@ -6,7 +6,7 @@ import Button from "../../Components/Button/Button";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { newOrderHandler } from "../../Redux/Reducers/CartSlice/cartSlice";
-import { useEffect } from "react";
+
 
 const Status = () => {
   const navigate = useNavigate();
@@ -14,9 +14,7 @@ const Status = () => {
   const order = useSelector((state) => state.order.order);
   const eta = order?.order?.eta;
   
-  useEffect(()=>{
-    dispatch(newOrderHandler())
-  },[])
+  
 
 
   
