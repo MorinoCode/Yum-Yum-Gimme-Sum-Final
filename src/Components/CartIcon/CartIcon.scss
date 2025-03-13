@@ -1,0 +1,30 @@
+@import "../../Sass/Mixins.scss";
+.cartIconContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  @include flexRowCenter;
+  position: relative;
+  cursor: pointer;
+
+  &:hover{
+    background-color: lightgray;
+  }
+
+  .cartIcon {
+    color: black;
+    font-size: 40px;
+  }
+  .cartIconQuantity {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    @include flexRowCenter;
+    border-radius: 50%;
+  }
+}

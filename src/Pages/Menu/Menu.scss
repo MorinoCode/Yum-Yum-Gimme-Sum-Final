@@ -1,0 +1,9 @@
+.menuContainer {
+  background-image: url("../../assets/images/HomeBG.png");
+  background-color: #8ED8BF;
+}
+
+// darkMode
+.menuContainer.dark{
+  background-color:rgb(14, 3, 83);
+}

@@ -1,0 +1,37 @@
+@import "../../Sass/Mixins";
+
+.cartContainer {
+  min-height: 100vh;
+  background-color: aliceblue;
+  @include flexCSB;
+}
+.statusImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 200px;
+    height: auto;
+    transform: scale(0.5) rotate(0deg);
+    animation: scaleAndRotate 2.5s ease-out forwards;
+  }
+}
+
+@keyframes scaleAndRotate {
+  from {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+.cartContainer.dark{
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+.errorMessage{
+  color: red;
+}

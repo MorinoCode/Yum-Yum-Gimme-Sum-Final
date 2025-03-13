@@ -1,0 +1,40 @@
+@mixin flexRowCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexRSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexRSA {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flexRE {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@mixin flexRS {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flexCSA {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@mixin flexCSB {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@mixin flexCSA {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

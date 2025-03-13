@@ -1,0 +1,24 @@
+@import "../../Sass/Mixins";
+
+.OrderHistoryItemContainer {
+    @include flexRSB;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 1rem 0.5rem;
+
+    &:hover {
+        opacity: 0.4; 
+    }
+
+    .OrderHistoryItemTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        .OrderHistoryItemTime {
+            @include flexRowCenter;
+        }
+    }
+}

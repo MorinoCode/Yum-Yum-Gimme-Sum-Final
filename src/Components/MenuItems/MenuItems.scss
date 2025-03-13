@@ -1,0 +1,20 @@
+.menuItemsContainer {
+  background-color: #605858;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  
+  
+
+  .menuItemsTitle {
+    margin: 1rem 0;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+// darkMode
+.menuItemsContainer.dark{
+  background-color: #6b65ad;
+  color: black;
+}

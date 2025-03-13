@@ -1,0 +1,71 @@
+@import "../../Sass/Mixins.scss";
+.logoWrapper {
+  position: relative;
+}
+.logoContainer {
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  @include flexRowCenter;
+  p {
+    letter-spacing: 5px;
+  }
+}
+.logoContainer.dark {
+  width: 80px;
+  height: 80px;
+  border: 3px solid black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  @include flexRowCenter;
+  p {
+    letter-spacing: 5px;
+    color: black;
+  }
+  &:hover {
+    color: orange;
+    border: 3px solid orange;
+  }
+}
+.logoContainer:hover {
+  color: orange;
+  border: 3px solid orange;
+}
+.logonav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(18, 17, 17);
+  @include flexCSA;
+  padding: 1rem;
+
+  .logonav_close {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .logonav_close:hover {
+    color: lightgray;
+  }
+
+  .logonav_list {
+    li {
+      list-style: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../Sass/Mixins";
+
+.MenuItemFoodContainer {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-top: 2px dotted lightgray;
+  cursor: pointer;
+
+  .MenuItemFoodTitlePrice {
+    @include flexRSB;
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  .MenuItemFoodDescription {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    @media screen and (max-width: 395px) {
+      font-size: 1rem;
+    }
+  }
+}

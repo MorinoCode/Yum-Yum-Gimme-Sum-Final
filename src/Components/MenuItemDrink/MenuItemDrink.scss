@@ -1,0 +1,20 @@
+@import "../../Sass/Mixins";
+
+.MenuItemDrinkContainer {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-top: 2px dotted lightgray;
+
+  .MenuItemDrinkTitlePrice {
+    @include flexRSB;
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  .MenuItemDrinkButtons {
+    @include flexRowCenter;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+}

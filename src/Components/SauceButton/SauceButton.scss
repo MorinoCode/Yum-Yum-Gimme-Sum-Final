@@ -1,0 +1,16 @@
+.sauceButton{
+    all: unset;
+    background-color: #909090 ;
+    padding: 0.5rem ;
+    border-radius: .25rem;
+    color: white;
+    cursor: pointer;
+}
+.sauceButton:hover{
+    background-color: #0f0f0f;
+    
+}
+.sauceButton.dark{
+    background-color: black ;
+
+}

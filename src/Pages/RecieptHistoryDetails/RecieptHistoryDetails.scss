@@ -1,0 +1,26 @@
+.RecieptHistoryContainer{
+    background-image: url("../../assets/images/HomeBG.png");
+    background-color: #8ED8BF;
+    min-height: 100vh;
+    .ReciptHistoryDetails{
+        background-color: #8ED8BF ;
+        padding: 1rem;
+        button{
+            margin: 1rem 0;
+        }
+        ul{
+            li{
+                list-style: none;
+                border: 1px  dotted black;
+                padding: 1rem;
+            }
+        }
+    }
+}
+//darkMode
+.RecieptHistoryContainer.dark{
+    background-color: #4e4e4f;
+    .ReciptHistoryDetails{
+        background-color: #9f9fa1;
+    }
+}

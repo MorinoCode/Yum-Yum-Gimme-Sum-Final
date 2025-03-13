@@ -1,0 +1,11 @@
+@import '../../Sass/Mixins';
+
+.notFoundContainer{
+    background-color: black;
+    height: 100vh;
+    @include flexRowCenter;
+
+    h2{
+        color: white;
+    }
+}

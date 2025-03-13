@@ -1,0 +1,21 @@
+@import "../../Sass/Mixins";
+.CartItemContainer{
+    @include flexRSB;
+    margin: 1rem 0;
+    .CartItemTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        
+        
+    .CartItemquantity{
+       @include flexRowCenter;
+
+       .CartItemquantityNumber{
+        font-size: 1rem;
+        padding: 0 .5rem;
+       }
+    }    
+    }
+}

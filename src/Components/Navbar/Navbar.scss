@@ -1,0 +1,15 @@
+@import "../../Sass/Mixins.scss";
+
+.menuPage {
+  @include flexRSB;
+  padding: 20px;
+  color: white;
+}
+.cartPage{
+  @include flexRE;
+  padding: 40px 20px;
+}
+.statusPage{
+  @include flexRS;
+  padding: 10px 20px;
+}

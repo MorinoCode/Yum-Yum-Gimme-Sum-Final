@@ -1,0 +1,28 @@
+@import "../../Sass/Mixins.scss";
+
+.homeContainer {
+  background-image: url("../../assets/images/HomeBG.png");
+  height: 100vh;
+  @include flexRowCenter;
+
+  .homeLogo {
+    width: 200px;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(0.5);
+      animation: scaleUp 2.5s ease-out forwards;
+    }
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

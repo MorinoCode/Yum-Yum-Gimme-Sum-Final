@@ -1,0 +1,8 @@
+@import "../../Sass/Mixins";
+
+.TotalPriceContainer{
+    background-color: lightgray;
+    @include flexRSB;
+    padding: 1.5rem .5rem;
+    
+}

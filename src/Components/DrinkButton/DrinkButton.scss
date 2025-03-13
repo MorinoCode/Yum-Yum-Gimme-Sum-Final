@@ -1,0 +1,16 @@
+.drinkButton{
+    all: unset;
+    background-color: #909090 ;
+    padding: 0.5rem ;
+   
+    border-radius: .25rem;
+    color: white;
+}
+.drinkButton:hover{
+    background-color: #0f0f0f;
+    cursor: pointer;
+}
+
+.drinkButton.dark {
+    background-color:black
+}
