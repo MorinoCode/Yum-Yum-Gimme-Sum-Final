@@ -12,12 +12,9 @@ const Status = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const order = useSelector((state) => state.order.order);
-  const eta = order?.order?.eta;
-  
+  const eta = order?.order?.eta.split("T")[1].split(".")[0] 
   
 
-
-  
   
   const checkReceipt = () => {
     if (order) {
@@ -26,6 +23,8 @@ const Status = () => {
       navigate("/status");
     }
   };
+
+  
   return (
     <section className="statusContainer">
       <Navbar variant={"statusPage"}>
@@ -38,7 +37,7 @@ const Status = () => {
 
       <article className="statusDescription">
         <h1>DINA WONTOS TILLAGAS!</h1>
-        <h3> ETA : {eta} </h3>
+        <h3> ETA : {eta ? eta : '0 MIN'} </h3>
         <p>ORDER ID : #{order.order ? order.order.id: "Inga order Hittades"}</p>
       </article>
 

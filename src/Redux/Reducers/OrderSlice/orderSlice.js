@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const sendOrderHandler = createAsyncThunk(
-    "order/sendOrderHandler",
+"order/sendOrderHandler",
     async (cartItemsId, { rejectWithValue, getState }) => {
       try {
         const { tenant } = getState().tenant; 

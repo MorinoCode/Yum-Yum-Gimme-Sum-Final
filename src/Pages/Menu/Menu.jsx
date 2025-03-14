@@ -20,7 +20,7 @@ const Menu = () => {
 
   useEffect(() => {
     dispatch(fetchApiKey())
-  }, [dispatch]);
+  }, []);
 
   useEffect(() => {
     if(apiKey){

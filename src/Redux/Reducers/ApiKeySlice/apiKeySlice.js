@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-
-
 export const fetchApiKey = createAsyncThunk('apiKey/fetchApiKey', async (_, { rejectWithValue }) => {
   try {
     const request = {
@@ -44,7 +42,7 @@ const apiKeySlice = createSlice({
       })
       .addCase(fetchApiKey.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload || "Something went wrong";
+        state.error = action.payload ;
       });
   },
 });
